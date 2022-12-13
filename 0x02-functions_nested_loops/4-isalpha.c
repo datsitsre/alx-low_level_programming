@@ -5,7 +5,7 @@
   *@c: variable to check if lower or uppercase
   * Return: 0  for lowercase and 1 for otherwise
   */
-int _islower(int c)
+int _isalpha(int c)
 {
 
 	if (c >= 97 && c <= 122)
