@@ -19,3 +19,4 @@ int print_last_digit(int n)
 		number = -number;
 		_putchar(number + '0');
 	}
+}
