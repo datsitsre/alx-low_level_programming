@@ -8,7 +8,7 @@ int main(void)
 {
 	int number1;
 	unsigned long first_number = 0, second_number = 1, n3;
-	unsigned long first_number_h1, frst_number_h2, second_number_h1, second_number_h2;
+	unsigned long first_number_h1, first_number_h2, second_number_h1, second_number_h2;
 	unsigned long h1, h2;
 
 	for (number1 = 0; number1 < 92; number1++)
