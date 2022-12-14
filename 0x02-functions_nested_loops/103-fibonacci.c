@@ -6,7 +6,7 @@
   */
 int main(void)
 {
-	unsigned long frist_numbe = 0, second_numbe = 1, third_number = 0, result = 0;
+	unsigned long first_numbe = 0, second_numbe = 1, third_number = 0, result = 0;
 
 	while (third_number <= 4000000)
 	{
