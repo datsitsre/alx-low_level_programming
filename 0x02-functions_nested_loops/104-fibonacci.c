@@ -11,18 +11,18 @@ int main(void)
 	unsigned long first_number_h1, n1_h2, second_number_h1, n2_h2;
 	unsigned long h1, h2;
 
-	for (number1 = 0; inc < 92; inc++)
+	for (number1 = 0; number1 < 92; number1++)
 	{
 		n3 = first_number + second_number;
 		printf("%lu, ", n3);
 		first_number = second_number;
 		second_number = n3;
 	}
-	first_number_h1 = n1 / 10000000000;
+	first_number_h1 = first_number / 10000000000;
 	second_number_h1 = n2 / 10000000000;
-	first_number_h2 = n1 % 10000000000;
-	second_number_h2 = n2 % 10000000000;
-	for (number1 = 93; inc < 99; inc++)
+	first_number_h2 = first_number % 10000000000;
+	second_number_h2 = second_number % 10000000000;
+	for (number1 = 93; number1 < 99; number1++)
 	{
 		h1 = first_number_h1 + second_number_h1;
 		h2 = first_number_h2 + second_number_h2;
