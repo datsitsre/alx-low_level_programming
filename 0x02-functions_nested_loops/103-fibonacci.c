@@ -15,7 +15,7 @@ int main(void)
 		second_numbe = third_number;
 
 		if ((first_numbe % 2) == 0)
-			result += first_number;
+			result += first_numbe;
 
 	}
 	printf("%ld\n", result);
