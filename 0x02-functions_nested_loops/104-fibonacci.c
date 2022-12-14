@@ -19,7 +19,7 @@ int main(void)
 		second_number = n3;
 	}
 	first_number_h1 = first_number / 10000000000;
-	second_number_h1 = n2 / 10000000000;
+	second_number_h1 = second_number / 10000000000;
 	first_number_h2 = first_number % 10000000000;
 	second_number_h2 = second_number % 10000000000;
 	for (number1 = 93; number1 < 99; number1++)
