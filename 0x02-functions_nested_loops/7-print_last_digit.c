@@ -5,7 +5,7 @@
   *@int: the number to give to a function
   *Return: 0
   */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 	int  number;
 
