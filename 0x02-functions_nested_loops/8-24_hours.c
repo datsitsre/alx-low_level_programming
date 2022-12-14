@@ -5,7 +5,7 @@
   *
   *Return: 0
   */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int number_one = 0, number_two;
 
@@ -25,4 +25,5 @@ int jack_bauer(void)
 		}
 		number_one++;
 	}
+
 }
