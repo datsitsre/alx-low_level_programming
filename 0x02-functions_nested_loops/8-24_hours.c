@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *main -  print the time of the date according to Jack
+  *jack_bauer -  print the time of the date according to Jack
   *
   *Return: 0
   */
