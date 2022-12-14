@@ -5,7 +5,7 @@
   *
   *Return: 0
   */
-int main(void)
+int jack_bauer(void)
 {
 	int number_one = 0, number_two;
 
