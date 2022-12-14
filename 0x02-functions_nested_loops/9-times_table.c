@@ -6,7 +6,7 @@
   */
 void times_table(void)
 {
-	int num_run, int multip1, int answer;
+	int num_run, multip1,  answer;
 
 	for (num_run = 0; num_run < 10; num_run++)
 	{
