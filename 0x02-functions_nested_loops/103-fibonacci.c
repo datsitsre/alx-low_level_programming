@@ -10,12 +10,12 @@ int main(void)
 
 	while (third_number <= 4000000)
 	{
-		third_number = first_number + second_number;
-		first_number = second_number;
-		second_number = third_number;
+		third_number = first_numbe + second_numbe;
+		first_numbe = second_numbe;
+		second_numbe = third_number;
 
-		if ((first_number % 2) == 0)
-			sum += n1;
+		if ((first_numbe % 2) == 0)
+			result += first_number;
 
 	}
 	printf("%ld\n", result);
