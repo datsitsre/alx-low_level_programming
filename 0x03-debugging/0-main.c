@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
   *main - test the positivie or negative if it prints the correct output
