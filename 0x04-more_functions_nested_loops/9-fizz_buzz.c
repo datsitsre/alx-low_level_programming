@@ -15,7 +15,7 @@ int main(void)
 			printf(" FizzBuzz ");
 		else if (index % 5 == 0)
 			printf(" Buzz ");
-		else if (index % 3 == 0)	
+		else if (index % 3 == 0)
 			printf(" Fizz ");
 		else
 			printf("%d ", index);
