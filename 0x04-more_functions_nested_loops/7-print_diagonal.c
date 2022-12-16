@@ -3,6 +3,7 @@
 /**
   *print_diagonal - print a diagonAL
   *@n: the number of times the diagonal will go
+  *Return: 0 if n = 0
   */
 void print_diagonal(int n)
 {
@@ -10,7 +11,7 @@ void print_diagonal(int n)
 
 	for (index = 0; index < n; index++)
 	{
-		if (n < 0)
+		if (n <= 0)
 			_putchar('\n');
 		_putchar('\\');
 	}
