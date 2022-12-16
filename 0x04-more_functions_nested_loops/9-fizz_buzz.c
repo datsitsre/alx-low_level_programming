@@ -18,17 +18,17 @@ int main(void)
 		}
 		else if (index % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 			printf(" ");
 		}
 		else if (index % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 			printf(" ");
 		}
 		else
 		{
-			printf("%d ", index);
+			printf("%d", index);
 			printf(" ");
 		}
 	}
