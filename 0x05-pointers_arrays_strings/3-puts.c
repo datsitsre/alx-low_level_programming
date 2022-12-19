@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
-  *_puts - write a function tha produces a string  
-  *@s: the string
+  *_puts - write a function tha produces a string
+  *@str: the string
   */
 void _puts(char *str)
 {
-	do
-	{
+	do {
 		_putchar(*str);
 		str++;
-	}while (*str != '\0');
+	} while (*str);
 	_putchar('\n');
 }
