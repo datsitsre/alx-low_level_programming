@@ -10,8 +10,6 @@ void rev_string(char *s)
 	int index = 0;
 	int len;
 
-	if (s[index] == '\0')
-		putchar('\n');
 	len  = sizeof(s) + 1;
 	for (index = len; index >= 0; index--)
 	{
