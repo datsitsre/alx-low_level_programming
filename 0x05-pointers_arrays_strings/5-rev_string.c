@@ -7,19 +7,23 @@
   */
 void rev_string(char *s)
 {
-	int len = 0;
 	int index = 0;
+	int len;
 
 	if (s[index] == '\0')
 		putchar('\n');
-
-	for (len = 0; s[len] != '\0'; len++)
+       
+	len  = sizeof(s) + 1;
+	for (index = len; index>= 0; index--)
 	{
+		_putchar(s[index]);
 	}
-
-	for (index = len - 1; s[index] != '\0'; index--)
+	_putchar('\n');
+	
+	/**for (index = sizeof(s) - 1; s[index] < sizeof(s); index--)
 	{
-		putchar(s[index]);
+		_putchar(s[index]);
 	}
-	printf("\n");
+	_putchar('\n');
+	*/
 }
