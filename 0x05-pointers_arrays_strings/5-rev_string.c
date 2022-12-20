@@ -12,18 +12,10 @@ void rev_string(char *s)
 
 	if (s[index] == '\0')
 		putchar('\n');
-       
 	len  = sizeof(s) + 1;
-	for (index = len; index>= 0; index--)
+	for (index = len; index >= 0; index--)
 	{
 		_putchar(s[index]);
 	}
 	_putchar('\n');
-	
-	/**for (index = sizeof(s) - 1; s[index] < sizeof(s); index--)
-	{
-		_putchar(s[index]);
-	}
-	_putchar('\n');
-	*/
 }
