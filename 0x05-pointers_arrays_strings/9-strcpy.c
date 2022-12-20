@@ -3,19 +3,19 @@
 /**
   *_strcpy - print some values
   *@dest: destination
-  *@src: source 
+  *@src: sourc
   *Return: dest
   */
-char * _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int index , len;
+	int index, len;
 
 
 	index = 0;
 	while (src[index] != '\0')
 		index++;
 
-	for (len = 0; src[len] != '\0' ; len++)
+	for (len = 0; len  < index ; len++)
 	{
 		dest[len] = src[len];
 	}
