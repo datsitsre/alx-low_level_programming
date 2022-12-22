@@ -2,6 +2,7 @@
 
 /**
   *string_toupper - to upper case
+  *@c: the input 
   *Return: a string
   */
 char *string_toupper(char *c)
@@ -10,7 +11,7 @@ char *string_toupper(char *c)
 
 	for (index = 0; c[index] != '\0'; index++)
 	{
-		if (c[index] >= 'a' && c[index] <='z')
+		if (c[index] >= 'a' && c[index] <= 'z')
 			c[index] = c[index] - 32;
 	}
 	return (c);
