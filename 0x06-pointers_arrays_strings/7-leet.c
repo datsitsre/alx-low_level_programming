@@ -12,7 +12,7 @@ char *leet(char *c)
 	int index3;
 
 	char letters[] = "aAeEoOtTlL";
-	char repl [] = "4433007711";
+	char repl[] = "4433007711";
 
 	index = 0;
 	while (C[index] != '\0')
