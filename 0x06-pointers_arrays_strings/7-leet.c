@@ -8,35 +8,27 @@
 char *leet(char *c)
 {
 	int index;
+	int index2;
+	int index3;
 
-	while (c[index] != '\0')
+	char letters[] = "aAeEoOtTlL";
+	char repl [] = "4433007711";
+
+	index = 0;
+	while (C[index] != '\0')
 	{
-		if (c[index] == 'a' || c[index] == 'A')
+		index2 = 0;
+
+		while (letters[index] != '\0')
 		{
-			c[index] = '4';
-		}
-		else if (c[index] == 'e' || c[index] == 'E')
-		{
-			c[index] = '3';
-		}
-		else if (c[index] == 'o' || c[index] == 'O')
-		{
-			c[index] = '0';
-		}
-		else if (c[index] == 't' || c[index] == 'T')
-		{
-			c[index] = '7';
-		}
-		else if (c[index] == 'l' || c[index] == 'L')
-		{
-			c[index] = '1';
-		}
-		else
-		{
+			if (s[index] == letters[index2])
+			{
+				c[index] = repl[index2];
+			}
+			index2++;
 		}
 		index++;
-
 	}
-
 	return (c);
+
 }
