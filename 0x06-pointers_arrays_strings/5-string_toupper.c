@@ -2,7 +2,7 @@
 
 /**
   *string_toupper - to upper case
-  *@c: the input 
+  *@c: the input
   *Return: a string
   */
 char *string_toupper(char *c)
