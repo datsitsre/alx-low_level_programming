@@ -2,12 +2,12 @@
 
 /**
   *leet - encode a string
-  *@c - the string to pass
-  *Return - new string 
+  *@c: the string to pass
+  *Return: new string
   */
 char *leet(char *c)
 {
-	int index ;
+	int index;
 
 	while (c[index] != '\0')
 	{
@@ -15,11 +15,11 @@ char *leet(char *c)
 		{
 			c[index] = '4';
 		}
-		else if(c[index] == 'e' || c[index] == 'E')
+		else if (c[index] == 'e' || c[index] == 'E')
 		{
 			c[index] = '3';
 		}
-		else if(c[index] == 'o' || c[index] == 'O')
+		else if (c[index] == 'o' || c[index] == 'O')
 		{
 			c[index] = '0';
 		}
@@ -38,5 +38,5 @@ char *leet(char *c)
 
 	}
 
-	return (c); 
+	return (c);
 }
