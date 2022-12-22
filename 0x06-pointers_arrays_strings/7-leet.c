@@ -9,19 +9,18 @@ char *leet(char *c)
 {
 	int index;
 	int index2;
-	int index3;
 
 	char letters[] = "aAeEoOtTlL";
-	char repl[] = "4433007711";
+	char repl[] =    "4433007711";
 
 	index = 0;
-	while (C[index] != '\0')
+	while (c[index] != '\0')
 	{
 		index2 = 0;
 
-		while (letters[index] != '\0')
+		while (letters[index2] != '\0')
 		{
-			if (s[index] == letters[index2])
+			if (c[index] == letters[index2])
 			{
 				c[index] = repl[index2];
 			}
