@@ -11,7 +11,10 @@ char *cap_string(char *c)
 
 	while (c[index] != '\0')
 	{
-		if (c[index] == 32 || c[index] == '\t' || c[index] == '\n' || c[index] == ',' || c[index] == '.' || c[index] == ';' || c[index] == '!' || c[index] == '?' || c[index] == '"' || c[index] == '(' || c[index] == ')' || c[index] == '}' || c[index] == '{')
+		if (c[index] == 32 || c[index] == '\t' || c[index] == '\n' || c[index] == ','
+				|| c[index] == '.' || c[index] == ';' || c[index] == '!' || c[index] == '?'
+				|| c[index] == '"' || c[index] == '(' || c[index] == ')' || c[index] == '}'
+				|| c[index] == '{')
 		{
 			if (c[index + 1] >= 'A' && c[index + 1] <= 'Z')
 			{
