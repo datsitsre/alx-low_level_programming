@@ -10,13 +10,17 @@ void reverse_array(int *a, int n)
 {
 	int index;
 
-	for (index = n - 1; index > 0; index--)
+	if (n < 0)
+		printf("\n");
+	else
 	{
-		printf("%d", a[index]);
-		if (index != 0)
-			printf(", ");
-	}
+		for (index = n - 1; index >= 0; index--)
+		{
+			printf("%d", a[index]);
+			if (index != 0)
+				printf(", ");
+		}
 	printf("\n");
-
+	}
 }
 
