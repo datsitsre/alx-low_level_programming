@@ -17,14 +17,4 @@ void reverse_array(int *a, int n)
 		a[index] = a[n - index - 1];
 		a[n - index - 1] = temp;
 	}
-/**
-	index2 = 0;
-	while (index2 < n)
-	{
-		if (index2 != 0)
-			printf(", ");
-		printf("%d", a[index2]);
-		index2++;
-	}
-	*/
 }
