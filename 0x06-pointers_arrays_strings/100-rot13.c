@@ -17,11 +17,11 @@ char *rot13(char *c)
 			if ((c[index] >= 'A' && c[index] <= 'M') ||
 					(c[index] >= 'a' && c[index] <= 'm'))
 			{
-				c[index] = c[index] + 13;
+				c[index] += 13;
 			}
 			else
 			{
-				c[index] = c[index] - 13;
+				c[index] -=  13;
 			}
 			index++;
 		}
