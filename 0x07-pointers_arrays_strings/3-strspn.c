@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-  *_strspn - get length of a prefix substring 
+  *_strspn - get length of a prefix substring
   *@s : strinv
   *@accept: string to accpet
-  *Return: lenght 
+  *Return: lenght
   */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	char * ptr_accept = accept ;
+	char *ptr_accept = accept;
 
-	while(*s)
+	while (*s)
 	{
 		while (*accept)
 		{
@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 		accept = ptr_accept;
 	}
 
-		return (count);	
+		return (count);
 }
 
 
