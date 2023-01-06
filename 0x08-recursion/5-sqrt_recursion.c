@@ -16,7 +16,6 @@ int _sqrt_recursion(int n)
 
 /**
   *square_root_wrapper - the naturl root
-  *@n: number of n
   *@min:  mini
   *@max: maximum
   *Return: 0
@@ -27,8 +26,7 @@ int square_root_wrapper(int min, int max)
 	if (max * max == min)
 		return (max);
 
-	if  ( max * max > min)  
-		return (-1);	
-
+	if  (max * max > min)
+		return (-1);
 	return (square_root_wrapper(min, max + 1));
 }
