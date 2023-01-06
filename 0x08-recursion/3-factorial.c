@@ -2,7 +2,7 @@
 
 /**
   *factorial - print factorial
-  *@n; the input value
+  *@n: the input value
   *Return: 0 for 0! and n for numbers!
   */
 int factorial(int n)
@@ -12,5 +12,5 @@ int factorial(int n)
 	else if (n < 0)
 		return (-1);
 	else
-		return (n * factorial(n-1));
+		return (n * factorial(n - 1));
 }
