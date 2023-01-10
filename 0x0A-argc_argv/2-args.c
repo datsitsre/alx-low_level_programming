@@ -4,7 +4,7 @@
 /**
   *main - print argument receives
   *@argv: the input argurment
-  *@argc: the count 
+  *@argc: the count
   *Return: 0
   */
 int main(int argc, char *argv[])
