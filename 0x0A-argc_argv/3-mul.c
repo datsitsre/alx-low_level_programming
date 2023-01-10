@@ -11,9 +11,8 @@
   */
 int main(int argc, char *argv[])
 {
-	
 	int index;
-	int num_1 ; 
+	int num_1;
 	int result = 1;
 
 	if (argc < 2)
@@ -21,11 +20,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else 
+	else
 	{
 		for (index = 1; index < argc; index++)
 		{
-			num_1 = strtol(argv[index], NULL, 10) ;
+			num_1 = strtol(argv[index], NULL, 10);
 			result = result * num_1;
 		}
 
