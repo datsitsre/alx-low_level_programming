@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	num_2 = strtol(argv[2], NULL, 10);
 	result = num_2 * num_1;
 
-		printf("%d\n", result);
+	printf("%d\n", result);
 
 	return (0);
 
