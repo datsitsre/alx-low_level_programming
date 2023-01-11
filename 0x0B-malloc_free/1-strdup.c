@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-  *_strdup - returns a pointer to a newly allocated space 
+  *_strdup - returns a pointer to a newly allocated space
   *@str: the string
   *Return: 0
   */
@@ -12,22 +12,19 @@ char *_strdup(char *str)
 	 char *ptr;
 	 int index = 0;
 
-	 
+	if (str == NULL)
+		return (NULL);
 
-	 ptr = malloc(sizeof(char)  * strlen(str));
+	 ptr = (char *) malloc(sizeof(char)  * strlen(str));
 
-	 if (str == NULL)
-		 return (NULL);
 
-	 while (*str)
-	 {
+	while (*str)
+	{
 		ptr[index] = *str;
 		str++;
 		index++;
-	 }
-	
-	 return (ptr);
-	
+	}
+	return (ptr);
 	 free(ptr);
 
 }
