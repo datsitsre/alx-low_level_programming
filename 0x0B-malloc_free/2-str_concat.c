@@ -4,7 +4,7 @@
 
 /**
   *str_concat - concate two strings
-  *@s1: string one 
+  *@s1: string one
   *@s2: string two
   *Return: string
   */
@@ -19,7 +19,6 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	ptr = malloc(sizeof(char) * (strlen(s1) + strlen(s2)));
-	
 
 	for (index = 0; s1[index] != '\0'; index++)
 	{
