@@ -7,7 +7,7 @@
   *@height: the columns
   *Return: pointer
   */
-void free_grid(int **grid, int hieght)
+void free_grid(int **grid, int height)
 {
 	int index_1; 
 	for (index_1 = 0; index_1 < height;index_1++)
