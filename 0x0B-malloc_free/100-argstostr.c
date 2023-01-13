@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdlib.h>
+#include "main.h" #include <stdlib.h>
 
 /**
   *argstostr - arguments of your pgram
@@ -30,27 +29,24 @@ char *argstostr(int ac, char **av)
 	}
 
 	ptr = malloc(sizeof(char) * (len + 1));
-
 	if (ptr == NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-
 	for (index_1 = index_2 = ptr_int = 0; ptr_int < len; ptr_int++, index_2++)
 	{
 		if (av[index_1][index_2] == '\0')
 		{
 			ptr[ptr_int] = '\n';
 			index_1++;
+			index_2++;
 			ptr_int++;
-			index_2 = 0;
 		}
 		if (ptr_int < len - 1)
 			ptr[ptr_int] = av[index_1][index_2];
 	}
 	ptr[ptr_int] = '\0';
-
 	return (ptr);
 }
 
