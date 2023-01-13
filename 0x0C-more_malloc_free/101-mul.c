@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int index_1, index_2;
-	int result;
+	unsigned int result;
 
 	if (argc != 3)
 	{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = atol(argv[2]) * atol(argv[1]);
-	printf("%d\n", result);
+	printf("%lu\n", result);
 
 	return (0);
 
