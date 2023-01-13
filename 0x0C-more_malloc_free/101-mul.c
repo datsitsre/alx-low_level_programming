@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	for (index_1 = 0; index_1 < argc; index_1++)
 	{
-		for (index_2 = 0; index_2 < '\0'; index_2++)
+		for (index_2 = 0; argv[index_1][index_2] < '\0'; index_2++)
 		{
 			if (argv[index_1][index_2] > 57 || argv[index_1][index_2] < 48)
 			{
