@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int index_1, index_2;
-	unsigned int result;
+	unsigned long result;
 
 	if (argc != 3)
 	{
