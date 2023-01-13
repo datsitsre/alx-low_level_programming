@@ -10,30 +10,22 @@
   */
 int main(int argc, char *argv[])
 {
-	int index_1, index_2;
-	unsigned long result;
-
+	unsigned long mul;
+	int i, j;
 	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		exit(98);
-	}
-
-	for (index_1 = 1; index_1 < argc; index_1++)
-	{
-		for (index_2 = 0; argv[index_1][index_2] != '\0'; index_2++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[index_1][index_2] > 57 || argv[index_1][index_2] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
 		}
+
 	}
-
-	result = atol(argv[1]) * atol(argv[2]);
-	printf("%lu\n", result);
-
+	mul = atol(argv[1]) *  atol(argv[2]);
+	printf("%lu\n", mul);
 return (0);
-
 }
