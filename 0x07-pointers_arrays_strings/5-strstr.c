@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *_strstr - locate 
+  *_strstr - locate
   *@haystack: top stack
   *@needle : pointer
   *Return: 0
