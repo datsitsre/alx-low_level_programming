@@ -12,9 +12,9 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	char *ptr_accept = accept;
 
-	while (*s)
+	while (*s++)
 	{
-		while (*accept)
+		while (*accept++)
 		{
 			if (*(s - 1) == *(accept - 1))
 			{
