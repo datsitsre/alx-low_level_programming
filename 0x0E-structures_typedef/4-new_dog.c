@@ -5,7 +5,7 @@
 
 
 /**
-  *struct new_dog - dog new
+  *new_dog - dog new
   *@name: name of person
   *@age: age of person
   *@owner: owner of person
