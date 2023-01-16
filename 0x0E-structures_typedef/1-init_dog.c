@@ -3,9 +3,9 @@
 
 /**
   *init_dog - initialize a dog
-  *@d: dog 
+  *@d: dog
   *@name: name of dog
-  *@age: age 
+  *@age: age
   *@owner: owner
   *
   */
