@@ -4,14 +4,14 @@
 
 
 /**
-  *main _ main program 
+  *main - main program
   *@argv: number of argument
   *@argc: count of argument
   *Return:0
   */
 int main(int argc, char *argv[])
 {
-	int (*func)(int , int);
+	int (*func)(int, int);
 	int result;
 
 	if (argc != 4)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	result = func(atoi(argv[1]),atoi(argv[3]));
+	result = func(atoi(argv[1]), atoi(argv[3]));
 
 	printf("%d\n", result);
 
