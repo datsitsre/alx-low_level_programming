@@ -1,15 +1,4 @@
-tart = 1;
-			printf("%i", va_arg(list, int));
-						break;
-								case 'f':
-											switch (start)
-				{ case 1: printf(", "); }
-							start = 1;
-										printf("%f", va_arg(list, double));
-													break;
-															case's':
-																		switch (start)
-				{ case 1: printf(", "); }#include <stdio.h>
+#include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -35,7 +24,19 @@ void print_all(const char * const format, ...)
 			break;
 			case 'i':
 			switch (start)
-			{ case 1:
+			{ case 1: printf(", "); }
+			start = 1;
+			printf("%i", va_arg(list, int));
+			break;
+		case 'f':
+			switch (start)
+			{ case 1: printf(", "); }
+			start = 1;
+			printf("%f", va_arg(list, double));
+			break;
+		case's':
+			switch (start)
+			{ case 1: printf(", "); }
 			start = 1;
 			p = va_arg(list, char*);
 			if (p)
