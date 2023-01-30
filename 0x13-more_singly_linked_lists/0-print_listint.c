@@ -13,7 +13,7 @@ size_t print_listint(const listint_t *h)
 	size_t index;
 
 	if (h == NULL)
-		return (0);
+		printf("(nil)");
 
 	for (index = 0; h; h =  h->next)
 	{
