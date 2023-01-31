@@ -10,18 +10,21 @@
   */
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr, *ptr_1;
+	listint_t **ptr;
+        listint_t  *ptr_1;
 
-	ptr = *head;
+	ptr = head;
 
 	if (ptr == NULL)
 		return;
 
-	while (ptr != NULL)
+	while (*ptr != NULL)
 	{
-		ptr_1 = ptr->next;
-		free(ptr);
-		ptr = ptr_1;
+		ptr_1 = (*ptr)->next;
+		free(*ptr);
+		*ptr = ptr_1;
 	}
-	*head = NULL;
+	*ptr = NULL;
+
+	head = ptr;
 }
