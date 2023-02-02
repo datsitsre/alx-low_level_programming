@@ -2,7 +2,7 @@
 
 
 /**
-  *get_bit - print the representation of a Number
+  *print_binary - print the representation of a Number
   *@n: n
   *Return:0
   */
