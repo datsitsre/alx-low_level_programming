@@ -1,6 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
 
-/*
+
+/**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
@@ -45,7 +47,6 @@ void print_magic(unsigned char *e_ident)
 			printf(" ");
 	}
 }
-
 
 /**
  * print_class - Prints the class of an ELF header.
@@ -94,6 +95,7 @@ void print_data(unsigned char *e_ident)
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
+
 
 /**
  * print_version - Prints the version of an ELF header.
@@ -159,9 +161,6 @@ void print_osabi(unsigned char *e_ident)
 		printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
-
-
-
 
 /**
  * print_abi - Prints the ABI version of an ELF header.
@@ -245,8 +244,6 @@ void close_elf(int elf)
 		exit(98);
 	}
 }
-
-
 
 /**
  * main - Displays the information contained in the
