@@ -13,18 +13,16 @@
 int create_file(const char *filename, char *text_content)
 {
 
-	int filedata;
-	int writedat;
+	int filedata = 0;
+	int writedat = 0;
 	int num = strlen(text_content);
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	filedata = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
+	filedata = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (filedata < 0)
 		return (-1);
-	else
-		return (1);
 
 	if (text_content)
 	{
