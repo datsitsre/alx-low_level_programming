@@ -22,7 +22,7 @@ unsigned long int countNumber;
 	}
 	table_hash->size = size;
 
-	table_hash->array = malloc(size * sizeof(hash_node_t));
+	table_hash->array = malloc(size * sizeof(hash_node_t *));
 
 	if (table_hash->array == NULL)
 	{
