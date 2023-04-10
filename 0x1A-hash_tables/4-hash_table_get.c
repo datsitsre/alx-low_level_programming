@@ -17,10 +17,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	countNumber = key_index((const unsigned char *)key,  ht->size);
 
-	if (countNumber >= ht->size)
-	{
-		 return (NULL);
-	}
+if (countNumber >= ht->size)
+{
+	return (NULL);
+}
 
 	node_table = ht->array[countNumber];
 
