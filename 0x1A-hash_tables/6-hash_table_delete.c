@@ -12,10 +12,10 @@ void hash_table_delete(hash_table_t *ht)
 	unsigned long int countNumber = 0;
 	hash_node_t *hash_table;
 
-	if (ht == NULL)
+	if (ht == NULL || ht->array == NULL )
 		return;
 
-	for (countNumber = 0; countNumber->size; countNumber++)
+	for (countNumber = 0; ht->size; countNumber++)
 	{
 		while (ht->array[countNumber] != NULL)
 		{
