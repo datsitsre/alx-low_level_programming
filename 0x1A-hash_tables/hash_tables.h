@@ -1,4 +1,3 @@
-#ifdef HASH_TABLE_
 #ifndef HASH_TABLE_
 #define HASH_TABLE_
 
