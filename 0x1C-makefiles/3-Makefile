@@ -1,0 +1,24 @@
+
+##Complier to use 
+CC=gcc
+RM=rm -rf
+## Files
+SRC=main.c school.c
+##ouput files
+OBJ=$(SRC:.c=.o)
+##Name of file
+NAME=school
+#Make file
+all: $(OBJ) 
+	$(CC) $(OBJ) -o $(NAME) 
+
+clean:
+       	$(RM) *~ $(NAME) 
+
+oclean:
+       	$(RM) $(OBJ)
+
+fclean: 
+	clean oclean
+re:
+	fclean all
