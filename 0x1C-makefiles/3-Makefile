@@ -1,11 +1,11 @@
 
-##Complier to use 
+#Complier to use 
 CC=gcc
-## Files
+# Files
 SRC=main.c school.c
-##ouput files
+#ouput files
 OBJ=$(SRC:.c=.o)
-##Name of file
+#Name of file
 NAME=school
 RM=rm -f
 #Make file
