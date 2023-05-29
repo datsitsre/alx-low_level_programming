@@ -1,12 +1,12 @@
 #Complier to use 
-CC=gcc
+CC= gcc
 # Files
-SRC=main.c school.c
+SRC= main.c school.c
 #ouput files
-OBJ=$(SRC:.c=.o)
+OBJ= $(SRC:.c=.o)
 #Name of file
-NAME=school
-RM=rm -f
+NAME= school
+RM= rm -f
 #Make file
 
 all: $(OBJ) 
