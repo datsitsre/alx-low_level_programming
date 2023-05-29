@@ -9,6 +9,7 @@ OBJ=$(SRC:.c=.o)
 ##Name of file
 NAME=school
 #Make file
+
 all: $(OBJ) 
 	$(CC) $(OBJ) -o $(NAME) 
 
@@ -18,7 +19,6 @@ clean:
 oclean:
        	$(RM) $(OBJ)
 
-fclean: 
-	clean oclean
-re:
-	fclean all
+fclean: clean oclean
+
+re: oclean all
