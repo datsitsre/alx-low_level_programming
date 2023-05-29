@@ -1,7 +1,7 @@
 
 ##Complier to use 
 CC=gcc
-RM=rm -rf
+RM=rm -f
 ## Files
 SRC=main.c school.c
 ##ouput files
@@ -14,7 +14,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME) 
 
 clean:
-       	$(RM) *~ $(NAME) 
+       	$(RM) ~ $(NAME) 
 
 oclean:
        	$(RM) $(OBJ)
