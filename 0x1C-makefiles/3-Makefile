@@ -8,6 +8,7 @@ OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm -f
 #Make file
+
 all: $(OBJ) 
 	$(CC) $(OBJ) -o $(NAME) 
 
