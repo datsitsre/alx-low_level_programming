@@ -3,7 +3,7 @@
 
 /**
  * jump_search - search for a value
- * @array: input 
+ * @array: input
  * @size: size
  * @value: value
  * Return: 0 or index
@@ -28,7 +28,7 @@ int jump_search(int *array, size_t size, int value)
 		key++;
 		p = i;
 		i = key * mid;
-	}while (i < (int)size && array[i] < value);
+	} while (i < (int)size && array[i] < value);
 
 	printf("Value found between indexes [%d] and [%d]\n", p, i);
 
